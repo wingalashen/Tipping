@@ -3,7 +3,7 @@
 /* TIPPING SCRIPT TO CHECK WEBSITE OR WEBSERVICE AVAILABILITY ~ TEBEL.ORG */
 
 // set what site to check and what string to check for
-$URL = $argv[1]; $CHECK = $argv[2];
+$URL = 126.23.45.65; $CHECK = sdfsdf;
 
 // alternative usage to call directly from web url instead
 // $URL = $_GET['URL']; $CHECK = $_GET['CHECK'];
@@ -18,8 +18,8 @@ else
 {
 	echo date('Y-m-d H:i:s') . " - FAIL\n"; // show timestamp
 	$_GET['OUTPUT'] = "TEXT"; // set mail result output as text
-	$_GET['SENDTO'] = "your_email@gmail.com"; // set to alert recipient
-	$_GET['SENDFROM'] = "Your Name <your_email@gmail.com>"; // set from
+	$_GET['SENDTO'] = "evanshen@laschina.org"; // set to alert recipient
+	$_GET['SENDFROM'] = "evan <greatappleid99@gmail.com>"; // set from
 	$_GET['SUBJECT'] = $URL . " down"; // set subject for email alert
 	// set message in email alert below or leave commented for no email body
 	// $_GET['MESSAGE'] = "Cannot find '" . $CHECK . "' at " . $URL . " website.";
