@@ -13,13 +13,13 @@ else
 
 // your catch-all email in case recipient email not provided
 if ($_GET['SENDTO']=="")
-	$to = "your_email@gmail.com";
+	$to = "greatappleid99@gmail.com";
 else
 	$to = $_GET['SENDTO'];
 
 // your default send from email if send from email not provided
 if ($_GET['SENDFROM']=="")
-	$from = "Your Name <your_email@gmail.com>";
+	$from = "Evan <greatappleid99@gmail.com>";
 else
 	$from = $_GET['SENDFROM'];
 
@@ -54,8 +54,8 @@ $message = "
 require_once('/full_path_on_your_server/PHPMailer/PHPMailerAutoload.php'); $mail = new PHPMailer;
 
 // configure SMTP server settings and account credentials used for sending mails
-$mail->Host = "your.mail.server"; $mail->Port = 26; $mail->SMTPAuth = true;
-$mail->Username = "your_email@gmail.com"; $mail->Password = "your_password";
+$mail->Host = "smtp.gmail.com"; $mail->Port = 26; $mail->SMTPAuth = true;
+$mail->Username = "greatappleid99@gmail.com"; $mail->Password = "Asdfgh+1234";
 
 $mail->isHTML(true); $mail->isSMTP(); $mail->SMTPDebug = 0; // set to 2 for debugging
 if ($_GET['OUTPUT']=="TEXT") $mail->Debugoutput = 'text'; else $mail->Debugoutput = 'html';
